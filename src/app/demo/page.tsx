@@ -1,7 +1,7 @@
 "use client"; // Ensure this code runs in a client-side environment
 
 import { Button } from "@/components/ui/button";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
@@ -28,9 +28,8 @@ enum STAGE {
   Finalize = 7,
 }
 
-type Props = {};
 // Main quiz component
-const page = (props: Props) => {
+const page = () => {
   // State for showing confetti animation
   const [showConfetti, setShowConfetti] = useState(false);
 
