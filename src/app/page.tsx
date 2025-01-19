@@ -5,13 +5,13 @@ import { Header } from "./header";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[#FCFCFC]">
       <div className="flex-1 flex flex-col items-center justify-center">
         <Header />
-        <div className="mx-auto flex-1 w-full flex flex-col lg:flex-row items-center justify-center p-4 gap-20">
-          <video width="500" muted autoPlay loop>
-            <source src="/hero.mp4" type="video/mp4" />
-          </video>
+        <div className="mx-auto flex-1 w-full flex flex-col lg:flex-row items-center justify-center p-4 gap-10">
+          <div className="relative w-[240px]  lg:w-[500px] aspect-square mb-8 lg:mb-0">
+            <Image src="/hero.gif" fill alt="Hero" className="object-cover" />
+          </div>
           <div className="flex flex-col items-center gap-y-8">
             <h1 className="text-xl lg:text-3xl font-bold text-neutral-800  text-center">
               Demo how our Referral System Works,
