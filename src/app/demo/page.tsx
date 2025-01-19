@@ -442,7 +442,7 @@ const page = (props: Props) => {
           )}
           {bodyContent}
           <div className="flex w-full mt-12 p-4">
-            {stage <= 5 && (
+            {stage != 6 && (
               <a href="/">
                 <Button
                   variant={"secondary"}
