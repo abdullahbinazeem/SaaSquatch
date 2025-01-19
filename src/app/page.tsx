@@ -28,7 +28,7 @@ export default function Home() {
                 </Button>
               </a>
               <a
-                href="https://app.saasquatch.com/"
+                href="https://www.saasquatch.com/request-demo"
                 target="_blank"
                 className="w-full"
               >
