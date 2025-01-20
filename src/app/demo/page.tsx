@@ -31,7 +31,10 @@ enum STAGE {
 // Main quiz component
 const page = () => {
   //Audio file
-  const correctAlarm = new Audio("/correct.mp3");
+  let correctAlarm: any;
+  if (typeof Audio != "undefined") {
+    correctAlarm = new Audio("/correct.mp3");
+  }
 
   // State for showing confetti animation
   const [showConfetti, setShowConfetti] = useState(false);
