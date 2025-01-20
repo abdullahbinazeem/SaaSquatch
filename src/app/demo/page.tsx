@@ -30,6 +30,9 @@ enum STAGE {
 
 // Main quiz component
 const page = () => {
+  //Audio file
+  const correctAlarm = new Audio("/correct.mp3");
+
   // State for showing confetti animation
   const [showConfetti, setShowConfetti] = useState(false);
 
@@ -60,6 +63,7 @@ const page = () => {
 
   // Navigate to the next stage with a confetti effect
   const onNext = () => {
+    correctAlarm.play(); //Play correct audio effect
     setShowConfetti(true); // Show confetti when moving to the next stage
     setSelected(false); // Reset selection state
 
