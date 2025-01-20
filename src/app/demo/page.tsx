@@ -408,7 +408,7 @@ const page = () => {
                 variant="secondary"
                 className="m-auto block hover:scale-105 transition-all  mt-8"
               >
-                Sign Up For a Call Today!
+                Sign Up Today!
               </Button>
             </a>
           </div>
@@ -418,7 +418,7 @@ const page = () => {
   }
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       {showConfetti && (
         <Confetti
           width={width}
@@ -429,7 +429,7 @@ const page = () => {
           numberOfPieces={400}
         />
       )}
-      <div className="flex-1 flex items-center justify-center">
+      <div className="flex-1 flex items-center justify-center  p-4">
         <div>
           {stage <= 6 && (
             <div className="w-full h-2 bg-gray-200 mt-16 rounded-2xl relative">
@@ -440,7 +440,7 @@ const page = () => {
             </div>
           )}
           {bodyContent}
-          <div className="flex w-full mt-12 p-4">
+          <div className="flex w-full mt-12">
             {stage != 6 && (
               <a href="/">
                 <Button
